@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title></title>  
+  <link rel="stylesheet" href="rapihin.css">  
+</head>  
+<body>
+  <!-- Overlay -->
+  <div class="overlay"></div>  
+
+  <!-- Judul -->
+  <header class="judul-wrapper">
+    <h1 class="judul-utama">SELAMAT ULANG TAHUN</h1>
+    <h2 class="judul-sub">(Untuk Ibu Tercinta 💖)</h2>
+  </header>
+
+  <!-- Cuma 1 card -->
+<div class="card" 
+     data-nama="Selamat Ulang Tahun Bahar!" 
+     data-ucapan="Semoga panjang umur, sehat selalu, sukses di setiap langkahmu!" 
+     data-foto="fotokeluarga/ibu.jpg">  
+  <img src="fotokeluarga/kado.png" alt="Foto Ibu">  
+  <p>Ayo Ibu di klik🥳🤗🎉</p>  
+</div>
+
+  <!-- Popup Ucapan -->    
+  <div class="popup">  
+    <div class="popup-content">  
+      <span class="close-btn">&times;</span>  
+      <img id="popup-foto" src="" alt="Foto Ulang Tahun">  
+      <div class="popup-text">  
+        <h2>🎉Eid Milad Saeed Ibu💖🎉</h2>  
+        <p>Barakallah fii umrik Ibu🤗, semoga panjang umur dan sehat selalu ya bu😊, maaf ya bu A bahar belum bisa ngasih hadiah yg spesial buat ibu, Aa cuman bisa ngasih hadiah berbasis codingan ini buat ibu, mungkin ini aja hadiah dari Aa bu</p><br>
+        
+        <p>Pesan dari Aa buat Ibu: “Jangan pernah lelah sebagai seorang ibu, sebab setiap peluhmu adalah doa, setiap sabarmu adalah pahala, dan setiap cintamu adalah cahaya bagi keluarga. Kaulah yang paling hebat, karena dari tanganmu lahir kasih sayang, dari hatimu tumbuh ketulusan, dan dari doamu tercurah keberkahan. Milad Mubarak, Ibu tercinta.”🌹✨ </p> <br>
+        
+         <p><b>Eid Milad Sa‘id, Ummii</b>💖😊</p>  
+      </div>  
+    </div>  
+  </div>
+  
+  <!-- Audio autoplay tapi kita kontrol dari JS -->
+<audio id="popup-audio" src="fotokeluarga/music/Breeze.mp3"></audio>
+
+  <!-- Tombol Album Memory -->
+  <div class="album-btn-container">
+  <button onclick="window.open('memory.html', '_blank')">Memory Album</button>
+</div>
+
+  <script src="script.js"></script>  
+</body>  
+</html>

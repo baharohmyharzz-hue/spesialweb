@@ -1,0 +1,244 @@
+@media screen and (min-767px) {
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0px;
+      padding: 0px;
+      background-color: black;
+  }
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+
+header {
+  background-image: url(fotokeluarga/HEADER.jpg);
+  background-position: center;
+  border-image: fill 0 linear-gradient(#0001,#000);
+  color: aliceblue;
+  text-align: center;
+  object-fit: cover;
+  position: relative;
+  padding: 10px;
+  width: auto;
+  height: 500px;
+}
+
+header h1 {
+  position: relative;
+  margin-top: 50px;
+  font-size: 6rem;
+  letter-spacing: 15px;
+  color: aliceblue;
+  text-transform: uppercase;
+  width: 0%;
+  text-align: center;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+
+header h1 {
+  position: relative;
+  font-size: 6rem;
+  letter-spacing: 15px;
+  color: aliceblue;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  line-height: 0.7em;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+
+header p {
+  font-size: 2rem;
+  color: aliceblue;
+  padding: 40px;
+}
+
+section h2 {
+  color: aliceblue;
+  padding: 20px;
+  margin: 20px;
+  background: transparent;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 50px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.card {
+  background: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 16px palevioletred;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 300px;
+  height: 170px;  /* landscape */
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* overlay blur background */
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 5;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* popup */
+.popup {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.popup.active {
+  visibility: visible;
+}
+
+.popup-content {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transform: scale(0.8);
+  transition: 0.3s ease;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.popup.active .popup-content {
+  transform: scale(1);
+}
+
+.popup-content img {
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.popup-content p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #333;
+}
+
+.back-btn-container button {
+  background: #FFA500;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.back-btn-container button:hover {
+  background: #FFA500;
+  transform: scale(1.05);
+}
+
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+.music-card {
+  background: skyblue;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  position: relative;
+  overflow: hidden;
+}
+.music-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.music-card h3 {
+  margin-top: 0;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.play-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: rgb(255, 25, 0);
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.play-btn:hover {
+  background: #ddd;
+}
+
+.seek-bar {
+  width: 150px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+
+

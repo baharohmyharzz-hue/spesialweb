@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Unforgettable memories</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome buat ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Welcome Ibu💖</h1>
+    <form id="loginForm">
+      <div class="input-box">
+        <input type="password" id="password" placeholder="Ayo tebak Ibu😁" required>
+        <i class="fa-solid fa-lock"></i>
+      </div>
+
+      <!-- Spinner -->
+      <div id="loaded" class="loaded"></div>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+
+  <script>
+    const validPassword = "190976";
+
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const password = document.getElementById("password").value.trim();
+      const loaded = document.getElementById("loaded");
+
+      // tampilkan spinner
+      loaded.classList.add("loading-visible");
+
+      setTimeout(function() {
+        loaded.classList.remove("loading-visible");
+
+        if (password === validPassword) {
+          window.location.href = "ultah.html"; // password benar → redirect
+        } else {
+          alert("Aduh Pass nya salah bu🤗,Aa kasih clue ya, Pass nya pake angka, angkanya berawalan 1 dan berakhiran angka 6, pass nya 6 digit ya bu😊");
+        }
+      }, 1500); 
+    });
+  </script>
+</body>
+</html>
