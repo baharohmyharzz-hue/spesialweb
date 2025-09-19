@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>memoryfoto</title>
+  <link rel="stylesheet" href="memory.css">
+</head>
+<body>
+  <header>
+    <h1>MEMORY ALBUM</h1>
+  </header>
+
+  <section id="anggota">
+    <h2 style="margin-top: 100px; letter-spacing: 10px;">
+       Family Memories Album
+    </h2>
+  </section>
+
+  <div class="container">
+    <div class="card">
+      <img src="fotokeluarga/fotomemory1.jpg" alt="Foto bersama saat Ultah Alya yang ke 4(2021)">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory2.jpg" alt="Kenangan Foto bersama sebelum berangkat mondok(2024)">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory3copy.jpg" alt="Ulang tahun Alya yang ke 3 Tahun (2020)">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory4.jpg" alt="Foto Alya 2 tahun pakai baju princess(2020)">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory6.jpg" alt="Alya dan Bahar (Brother and Sister) (2024)">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory5copy.jpg" alt="Muhammad Bahar(2024)">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory8.jpg" alt="Foto Bersama (2024)">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory9copy.jpg" alt="Alya (2024)">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory12.jpg" alt="AlyaBahar 2">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory15.jpg" alt="Nuneng Alya Menyuapi Bapak Makan Kue (Ultah Alya ke 4) (2021)">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory16copy.jpg" alt="Foto Alya Bersama Ibu (2021)">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory19.jpg" alt="Panjang Umur Nuneng Alya(4) :D (2021)">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory27.jpg" alt="Foto Alya saat makan Popcorn (2020)">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory25.jpg" alt="Foto Alya (2020)">
+    </div>
+    <div class="card">
+      <img src="fotokeluarga/fotomemory28.jpg" alt="Foto Alya saat bermain wahana (2020)">
+    </div>
+  </div>
+
+  <!-- Overlay blur -->
+  <div class="overlay"></div>
+
+  <!-- Popup foto + teks -->
+  <div class="popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <img id="popup-foto" src="" alt="Belum Di Isi">
+      <p id="popup-kata"></p>
+      
+      
+    </div>
+  </div>
+  
+  <h1 style="text-align:center; color:white;">Kenangan Dari Tahun ke Tahun</h1>
+  <div style="text-align:center; margin-top:20px;">
+    <div class="back-btn-container">
+  <button onclick="window.location.href='Bahar.html'">Kembali Ke Halaman Sebelumnya</button>
+  <h1 style="text-align:center; color:rgb(0, 213, 255);">Kumpulan Playlist Musik  Cover dan Instrumen</h1>
+</div>
+  </div>
+</body>
+ <!-- Autoplay hidden -->
+  <audio id="autoplayMusic">
+    <source src="fotokeluarga/music/instrumen1.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="music-grid">
+    <div class="music-card">
+      <img src="https://i.scdn.co/image/ab67616d0000b27339695d4c16489cdf60bef536" alt="Cover 1">
+      <h3>Nina</h3>
+      <p><b>.Feast</b></p>
+      <audio class="main-audio" id="lagu1">
+        <source src="fotokeluarga/music/nina.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu1">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.goodfon.com/wallpaper/big/e/e9/devushka-noch-mlechnyi-put-gorod.webp" alt="Cover 2">
+      <h3>Kangen</h3>
+      <p><b>Dewa 19 Ft. Hanin Dhiya</b></p>
+      <audio class="main-audio" id="lagu2">
+        <source src="fotokeluarga/music/kangen.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu2">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://artofpaintbynumbers.com/wp-content/uploads/1-4348.webp" alt="Cover 3">
+      <h3>Instrumen</h3>
+      <p><b>Sad Piano</b></p>
+      <audio class="main-audio" id="lagu3">
+        <source src="fotokeluarga/music/seeyouagain.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu3">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://i.scdn.co/image/ab67616d0000b273d304ba2d71de306812eebaf4" alt="Cover 4">
+      <h3>Night Changes Piano ver.</h3>
+      <p><b>One Direction</b></p>
+      <audio class="main-audio" id="lagu4">
+        <source src="fotokeluarga/music/nightchanges.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu4">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://i.pinimg.com/1200x/60/f9/81/60f981ca60359a57fc4f89978a449355.jpg" alt="Cover 5">
+      <h3>Instrumen</h3>
+      <p><b>Sad Piano 2</b></p>
+      <audio class="main-audio" id="lagu5">
+        <source src="fotokeluarga/music/sad.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu5">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.goodfon.com/wallpaper/big/4/47/paren-nebo-noch-grustnyi-zvezdopad.webp" alt="Cover 6">
+      <h3>Instrumen Sad</h3>
+      <p><b>Accoustic Sad</b></p>
+      <audio class="main-audio" id="lagu6">
+        <source src="fotokeluarga/music/acousticgitar.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu6">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://i1.sndcdn.com/artworks-000345154206-tuk3hl-t500x500.jpg" alt="Cover 7">
+      <h3>Closer 80s Ver.</h3>
+      <p><b>The Chainsmokers</b></p>
+      <audio class="main-audio" id="lagu7">
+        <source src="fotokeluarga/music/closer80s.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu7">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://thumbs.dreamstime.com/b/stunning-anime-style-night-sky-vibrant-shooting-stars-perfect-fantasy-backgrounds-anime-night-sky-shooting-stars-355598719.jpg" alt="Cover 8">
+      <h3>Instrumen Sad2</h3>
+      <p><b>Accoustic Sad</b></p>
+      <audio class="main-audio" id="lagu8">
+        <source src="fotokeluarga/music/acousticsad1.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu8">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://images.wallpaperscraft.com/image/single/girl_silhouette_milky_way_476122_1280x720.jpg" alt="Cover 9">
+      <h3>Sempurna Accoustic Ver.</h3>
+      <p><b>Andra and The Backbone</b></p>
+      <audio class="main-audio" id="lagu9">
+        <source src="fotokeluarga/music/Sempurna.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu9">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.freepik.com/premium-photo/anime-girl-sitting-railing-looking-sunset-lake_1034581-69856.jpg" alt="Cover 10">
+      <h3>Maps Girl Ver.</h3>
+      <p><b>Maroon5</b></p>
+      <audio class="main-audio" id="lagu10">
+        <source src="fotokeluarga/music/MapsM5.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu10">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://i.scdn.co/image/ab67616d0000b2734c05e7ef8da22aafecf07b5d" alt="Cover 11">
+      <h3>Ibu</h3>
+      <p><b>Iwan Fals</b></p>
+      <audio class="main-audio" id="lagu11">
+        <source src="fotokeluarga/music/Iwan Fals - Ibu ( Lirik ).mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu11">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://e0.pxfuel.com/wallpapers/460/158/desktop-wallpaper-sad-sunset-anime-people-sunset.jpg" alt="Cover 12">
+      <h3>Pesan Terakhir</h3>
+      <p><b>Lyodra</b></p>
+      <audio class="main-audio" id="lagu12">
+        <source src="fotokeluarga/music/Pesanterakhir.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu12">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://i.scdn.co/image/ab67616d0000b2730c76be87f513c8361d06d6bd" alt="Cover 13">
+      <h3>A Thousand Years Piano Ver.</h3>
+      <p><b>Christina Perri</b></p>
+      <audio class="main-audio" id="lagu13">
+        <source src="fotokeluarga/music/thsndyears.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu13">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://i.pinimg.com/736x/62/7b/c0/627bc0a8824dabde703663a61e01692f.jpg" alt="Cover 14">
+      <h3>Instrumen Sad3</h3>
+      <p><b>Accoustic Sad</b></p>
+      <audio class="main-audio" id="lagu14">
+        <source src="fotokeluarga/music/ifyoucry.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu14">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.freepik.com/premium-photo/anime-boy-looking-sunset-city-generative-ai_900370-34835.jpg" alt="Cover 15">
+      <h3>Instrumen</h3>
+      <p><b>Sad Piano3</b></p>
+      <audio class="main-audio" id="lagu15">
+        <source src="fotokeluarga/music/Alonewithyou.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu15">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://i.scdn.co/image/ab67616d0000b273d304ba2d71de306812eebaf4" alt="Cover 16">
+      <h3>18</h3>
+      <p><b>One Direction</b></p>
+      <audio class="main-audio" id="lagu16">
+        <source src="fotokeluarga/music/One Direction - 18.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu16">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://i.scdn.co/image/ab67616d0000b273d304ba2d71de306812eebaf4" alt="Cover 17">
+      <h3>Night Changes</h3>
+      <p><b>One Direction</b></p>
+      <audio class="main-audio" id="lagu17">
+        <source src="fotokeluarga/music/One Direction - Night Changes.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu17">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://i.scdn.co/image/ab67616d0000b2737d45ed58382acea49ad5fa8e" alt="Cover 18">
+      <h3>Breeze (Japanese)</h3>
+      <p><b>Tatsuya Maruyama</b></p>
+      <audio class="main-audio" id="lagu18">
+        <source src="fotokeluarga/music/Breeze.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu18">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.freepik.com/premium-photo/lofi-anime-boy_863013-93521.jpg" alt="Cover 19">
+      <h3>Japanese Guitar (LittleKate)</h3>
+      <p><b>TakeshiSakasegawa</b></p>
+      <audio class="main-audio" id="lagu19">
+        <source src="fotokeluarga/music/TakeshiSakasegawaLittleKate.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu19">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.freepik.com/premium-photo/lofi-anime-boy_863013-93492.jpg" alt="Cover 20">
+      <h3>Growing Up</h3>
+      <p><b>Masaaki Kishibe</b></p>
+      <audio class="main-audio" id="lagu20">
+        <source src="fotokeluarga/music/growingupMK.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu20">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.freepik.com/premium-photo/lofi-anime-boy_863013-93611.jpg" alt="Cover 21">
+      <h3>Seandainya</h3>
+      <p><b>Vierra</b></p>
+      <audio class="main-audio" id="lagu21">
+        <source src="fotokeluarga/music/seandainyaVierra.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu21">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.freepik.com/premium-photo/lofi-anime-boy_863013-93578.jpg" alt="Cover 22">
+      <h3>Penjaga Hati</h3>
+      <p><b>Nadhif Basalamah</b></p>
+      <audio class="main-audio" id="lagu22">
+        <source src="fotokeluarga/music/Nadhif Basalamahpenjaga hati.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu22">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.freepik.com/premium-photo/lofi-anime-boy_863013-93591.jpg" alt="Cover 23">
+      <h3>Love Story (Fingerstyle Ver.)</h3>
+      <p><b>Taylor Swift</b></p>
+      <audio class="main-audio" id="lagu23">
+        <source src="fotokeluarga/music/lovestory.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu23">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.freepik.com/premium-photo/anime-boy-sitting-ledge-watching-sunset-urban-area-generative-ai_958165-28114.jpg" alt="Cover 24">
+      <h3>Janji Setia</h3>
+      <p><b>Tiara Andini</b></p>
+      <audio class="main-audio" id="lagu24">
+        <source src="fotokeluarga/music/Janjisetia.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu24">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.freepik.com/premium-photo/contemplative-boy-watching-sunset-starry-cityscape-anime-art-style_1008996-3327.jpg" alt="Cover 25">
+      <h3>Hingga Tua Bersama</h3>
+      <p><b>Rizky Febian</b></p> 
+      <audio class="main-audio" id="lagu25">
+        <source src="fotokeluarga/music/hinggatuabersama.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu25">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.freepik.com/premium-photo/anime-boy-watching-sunset-from-bedroom-window-cityscape-view-vibrant-colorslofi_1240952-17.jpg" alt="Cover 26">
+      <h3>Fireflies</h3>
+      <p><b>Owl City</b></p>
+      <audio class="main-audio" id="lagu26">
+        <source src="fotokeluarga/music/fireflies.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu26">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://i.pinimg.com/736x/af/d1/4e/afd14e4ec542d37e7d99dcf89b474dd5.jpg" alt="Cover 27">
+      <h3>Apologize</h3>
+      <p><b>OneRepublic</b></p>
+      <audio class="main-audio" id="lagu27">
+        <source src="fotokeluarga/music/Apologize OR.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu27">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.pikbest.com/best/video_preview_img/2408/10595425-66b1d616d6fe8.jpg!w700wp" alt="Cover 28">
+      <h3>Apologize Girl Ver.</h3>
+      <p><b>OneRepublic</b></p>
+      <audio class="main-audio" id="lagu28">
+        <source src="fotokeluarga/music/Apologize Girl.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu28">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.freepik.com/premium-photo/anime-boy-looking-stars-sky-generative-ai_1035763-14380.jpg" alt="Cover 29">
+      <h3></h3>
+      <p><b></b></p>
+      <audio class="main-audio" id="lagu29">
+        <source src="" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu29">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+    <div class="music-card">
+      <img src="https://img.freepik.com/premium-photo/anime-boy-looking-stars-sky-generative-ai_958138-103770.jpg" alt="Cover 30">
+      <h3></h3>
+      <p><b></b></p>
+      <audio class="main-audio" id="lagu30">
+        <source src="" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" data-id="lagu30">▶</button>
+      <input type="range" class="seek-bar" value="0" min="0" max="100">
+    </div>
+  </div>
+
+  <script src="memory.js"></script>
+</body>
+</html>
